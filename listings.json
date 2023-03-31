@@ -1,0 +1,24 @@
+[
+  {
+    "listing": "/danijela_dimitrijevic.html",
+    "items": [
+      "/posts/analpal/2023-03-31_subsample/subsample_counts.html"
+    ]
+  },
+  {
+    "listing": "/examples.html",
+    "items": [
+      "/posts/analpal/2023-03-31_subsample/subsample_counts.html",
+      "/posts/other/post-with-code/index.html",
+      "/posts/other/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/team.html",
+    "items": []
+  },
+  {
+    "listing": "/adam_kocsis.html",
+    "items": []
+  }
+]
