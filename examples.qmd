@@ -1,0 +1,32 @@
+---
+title: "Examples"
+listing:
+  - id: "analpal"
+    contents: posts/analpal
+    sort: "date desc"
+    type: default
+    categories: true
+    sort-ui: false
+    filter-ui: false
+  - id: "other"
+    contents: posts/other
+    sort: "date desc"
+    type: default
+    categories: true
+    sort-ui: false
+    filter-ui: false
+page-layout: full
+toc: true
+---
+
+## Analytical Paleobiology
+
+::: {#analpal}
+:::
+
+
+
+## Other 
+
+::: {#other}
+:::

@@ -1,0 +1,13 @@
+---
+title: The people behind EvolvED 
+thing: "This is great"
+listing:
+  id: "people-list"
+  template: templates/custom.ejs
+  sort: title
+  contents: 
+  - data/people.yml
+---
+
+::: {#people-list}
+:::

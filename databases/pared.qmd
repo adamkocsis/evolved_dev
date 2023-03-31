@@ -1,0 +1,18 @@
+---
+title: The PaleoReefs Database
+toc: true
+--- 
+
+# Heading 1
+
+Random text
+
+# Heading 2
+
+More text
+
+
+# Heading 3
+
+
+Lorem ipsum

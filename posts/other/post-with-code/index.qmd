@@ -1,0 +1,9 @@
+---
+title: "Post With Code"
+author: '<a href="https://www.telex.hu">Harlow Malloc</a>'
+date: "2023-02-23"
+categories: [news, code, analysis, pbdb]
+image: "image.jpg"
+---
+
+This is a post with executable code.

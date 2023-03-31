@@ -1,0 +1,5 @@
+---
+title: rgplates
+---
+
+# This is the page of the rgplates package.

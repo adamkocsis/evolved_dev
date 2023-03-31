@@ -1,0 +1,43 @@
+---
+title: The Paleobiology Database
+toc: true
+--- 
+
+[Examples with the Paleobiology Database](../examples.html#category=pbdb)
+
+- acronyms
+- logo
+- official link
+- data license
+- since
+
+## Citation (s)
+
+The database has no official publication or citation. However it is recommended to acknowledge the Paleobiology Database in your publication, and to get your listed among the official publications of the PBDB. 
+
+## Scope
+
+#### Domains
+
+The focal domain of the database is the spatiotemporal distribution of fossil taxon observation. 
+
+The database also provides information on stratigraphy, taxonomy, 
+
+#### Temporal
+
+#### Spatial
+
+## Science
+- Original research questions
+
+## History
+
+#### People
+
+#### Funding
+
+#### Implementation
+
+## Technical
+
+#### Structure

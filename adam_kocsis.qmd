@@ -1,0 +1,18 @@
+---
+title: Adam Kocsis
+listing:
+  id: "examples"
+  template: templates/example.ejs
+  contents: 
+  - data/posts.yml
+  include:
+    author: kocsis
+---
+
+
+
+## List of examples written by Adam:
+
+::: {#examples}
+:::
+

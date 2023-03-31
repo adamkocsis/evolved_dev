@@ -1,0 +1,67 @@
+project:
+  type: website
+  preview:
+    port: 7777
+    browser: false
+
+website:
+  title: "evolvED"
+  navbar:
+    search: true
+    left:
+      - href: about.qmd
+        text: About
+      - file: databases.qmd
+        text: "Databases"
+      - file: software.qmd
+        text: "Software"
+      - file: examples.qmd
+        text: "Examples"
+      - href: team.qmd
+        text: Team 
+      - href: about.qmd
+        text: "Contact"
+    right:
+      - href: "https://integrated-record.github.io/"
+        text: IRAL 
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com/learn_evolved
+        
+  sidebar:
+    - title: "Databases"
+      style: "docked"
+      background: "#ffffff"
+      collapse-level: 1
+      contents:
+        - databases.qmd
+        - href: "databases.html#fossil-distribution"
+          text: "Organism Distribution"
+        - file: databases/pbdb.qmd
+          text: "Paleobiology Database"
+
+    - title: "Software"
+      style: "docked"
+      background: "secondary"
+      collapse-level: 2
+      contents:
+        - software.qmd
+        - section: R extensions
+          contents:
+            - file: software/R/divDyn.qmd
+              text: divDyn
+    
+    - title: "Examples"
+      style: "docked"
+      collapse-level: 2
+      contents:
+        - examples.qmd
+        
+format:
+  html:
+    theme: cosmo 
+    css: styles.css
+
+
+
