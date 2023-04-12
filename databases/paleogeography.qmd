@@ -1,0 +1,17 @@
+---
+title: "Paleogeography"
+format:
+  html:
+    toc: true
+type: geo_database
+---
+
+# Tectonic reconstruction models
+- PALEOMAP project
+
+# Paleoclimate modelling
+
+- BRIDGE stage-level climate reconstructions
+- CHELSA
+- Paleoclim
+

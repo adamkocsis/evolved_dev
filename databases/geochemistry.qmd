@@ -1,0 +1,10 @@
+---
+title: "Geochemistry"
+format:
+  html:
+    toc: true
+type: geo_database
+---
+
+### Isotope data
+

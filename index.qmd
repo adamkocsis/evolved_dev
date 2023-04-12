@@ -1,9 +1,35 @@
 ---
-title: "evolvED"
+title: "Evolv-ED"
 ---
+
+     
+
+<!-- Hero -->
+<div class="p-4 shadow-4 rounded-3" style="background-color: hsl(0, 0%, 94%);">
+  <h2>Welcome to Evolv-ED!</h2>
+  <p>
+    This website is an educational hub of research material in the broad field of evolutionary-ecological research including databases and software - and examples to show them in use. 
+  </p>
+
+  <hr class="my-4" />
+
+  <p>
+   Start here, if you do not yet know where to go: 
+  </p>
+  <button type="button" class="btn btn-primary">
+    Why?! 
+  </button>
+</div>
+<!-- Hero -->
 
 The EvolvED is a hub of educational material. 
 
 The website serves as repository of educational material for the Integrated Record of Ancient Life. 
 
 
+* * *
+
+# Basic sitemap:
+
+- **About**: learn more about the Evolv-ED, connected projects and the people managing it.
+- **

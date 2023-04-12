@@ -1,0 +1,15 @@
+---
+title: "Cultural and Human Impact"
+format:
+  html:
+    toc: true
+type: geo_database
+---
+
+# Regionalization data
+
+
+# Human impact
+
+
+

@@ -1,0 +1,25 @@
+---
+title: "Modern Physical Geography"
+format:
+  html:
+    toc: true
+type: geo_database
+---
+
+# Physical Geography
+- Natural earth
+- ETOPO1
+
+
+
+# Climate observation
+- HadISST
+- CRU TS4
+
+
+## Species distribution models
+
+- WorldClim
+- BioOracle-2
+
+

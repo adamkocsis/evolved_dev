@@ -1,12 +1,26 @@
 ---
-title: Using count data with `subsample()` function of the divDyn package.
-author: '<a href="../../adam_kocsis.html">Kocsis, Adam</a>'
-date: '2020-02-28'
+title: Using count data with the subsample() function of the divDyn package.
+resource-path: ['../../../']
+bibliography: 'bibliography/evolved.bib'
+#title-block-banner: '../../../images/ocean_sea_water_seascape_nature_3840x2160.jpg' 
+author:
+  - name: Kocsis, Adam 
+    url: "../../../adam_kocsis.html" 
 toc: true
 categories: 
-- divDyn
+- subsampling
+- diversity
+listing:
+  id: "resources"
+  template: ../../../templates/resources.ejs
+  contents: 
+  - ../../../data/resources.yml
+  include:
+    title: "{R,divDyn,pbdb,iNEXT}*" 
 ---
 
+::: {#resources}
+:::
 
 ```{r setup, include=FALSE, echo=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -25,7 +39,7 @@ counts <- c(35,19,13,9,6,4,2,2,2,2,2,2,2,1,1,1,1,1,1,1)
 
 ### Preparing data
 
-The current version of divDyn can only accept extended formats for ecological samples. This means that every specimen (identity) has to be present as a separate object. To make the count data above compatible with ``subsample()``, we can use the ``rep()`` funciton from the base package to repeat placeholders (i.e. letters) that symbolize the specimens that belong to different species. 
+The current version of divDyn [@kocsis2019package] can only accept extended formats for ecological samples. This means that every specimen (identity) has to be present as a separate object. To make the count data above compatible with ``subsample()``, we can use the ``rep()`` funciton from the base package to repeat placeholders (i.e. letters) that symbolize the specimens that belong to different species. 
 
 ```{r specimens, message=FALSE, paged.print=FALSE}
 # one letter that represents each species
@@ -62,7 +76,7 @@ richness(specimens)
 
 The important thing to note is, that the argument of this function has to be ``x``. In simple cases where the ``data.frame`` which is fed to the ``subsample`` function has only one column, this represents a vector of specimens.
 
-Now, all that remains is to feed our data to the subsampling. By default, subsample will execute classical rarefaction (Sanders, 1968). 
+Now, all that remains is to feed our data to the subsampling. By default, subsample will execute classical rarefaction [@sanders_marine_1968]. 
 
 ```{r cr, message=FALSE, paged.print=FALSE}
 # Richness subsampled to 10 individuals, number of iterations is 1000
@@ -71,14 +85,14 @@ subsample(samp, tax="specimens", q=10, FUN=richness, iter=1000, counter=F)
 
 As the target quota is quite low, you need to increase the number of iterations to make the estimate stabilize.
 
-To run Shareholder Quorum Subsampling (Alroy, 2010), you have to specify the ``type`` and the ``q`` arguments appropriately.
+To run Shareholder Quorum Subsampling [@alroy_shifting_2010], you have to specify the ``type`` and the ``q`` arguments appropriately.
 
 ```{r sqs, message=FALSE, paged.print=FALSE}
 # Richness subsampled to 10 individuals, number of iterations is 1000
 subsample(samp, tax="specimens", q=0.5, type="sqs", FUN=richness, iter=1000, counter=F)
 ```
 
-You can contrast this with the analytical solution (coverage-based rarefaction, Chao and Jost, 2012)  implemented in the iNEXT-package
+You can contrast this with the analytical solution (coverage-based rarefaction) [@chao_coverage-based_2012]  implemented in the iNEXT-package
 
 ```{r inext, message=FALSE, paged.print=FALSE}
 # download with install.packages(iNEXT)
@@ -93,13 +107,5 @@ Value we are interested in is ``qD`` at the order of ``0``, which is somewhat hi
 ### Ackowledgements
 
 Thanks to Erin Saupe for asking about the example and indirectly to Seth Finnegan for his original course material.
-
-### References
-
-Alroy, J. (2010). The Shifting Balance of Diversity Among Major Marine Animal Groups. Science, 329, 1191–1194. PBDB 0117. https://doi.org/10.1126/science.1189910
-
-Chao, A., & Jost, L. (2012). Coverage-based rarefaction and extrapolation: Standardizing samples by completeness rather than size. Ecology, 93(12), 2533–2547. https://doi.org/10.1890/11-1952.1
-
-Sanders, H. L. (1968). Marine Benthic Diversity: A Comparative Study. The American Naturalist, 102(925), 243–282.
 
 

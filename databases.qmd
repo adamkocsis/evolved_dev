@@ -3,50 +3,25 @@ title: "Databases"
 format:
   html:
     toc: true
+title-block-banner: true
+listing:
+- id: "bio"
+  type: grid
+  include: 
+    type: "bio_database"
+- id: "geo"
+  type: grid
+  include: 
+    type: "geo_database"
 ---
 
+# Biological data
+::: {#bio}
+:::
 
+# Geological / Geographic data
+::: {#geo}
+:::
 
-## Organism Distribution
-
-##### Fossils
-
-- [The PaleoReefs Database](databases/neptune.qmd)
-- [Paleobiology Database](databases/pbdb.qmd)
-- [Neptune Sandbox Berlin](databases/neptune.qmd)
-
-##### Modern Organisms
-- OBIS
-- GBIF
-
-#### 
-
-## Taxonomy
-#### Fossils
-
-## Traits
-- database
-- database
-- database
-
-## Modern organisms
-
-## Morphology
-
-## Interaction
-
-##### Modern
-
-##### Fossils
-
-
-## Paleogeography
-
-##### 
-
-- The PaleoMAP model
-- 
-
-## Modern geography
 
 

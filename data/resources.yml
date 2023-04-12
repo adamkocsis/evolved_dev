@@ -1,0 +1,17 @@
+- title: divDyn
+  path: "http://localhost:7777/software/R/divDyn.html"
+  type: software
+- title: pbdb
+  path: "http://localhost:7777/databases/pbdb.html"
+  type: database
+- title: chronosphere
+  path: "http://localhost:7777/software/R/chronosphere.html"
+  type: software
+- title: iNEXT
+  path: "http://localhost:7777/software/R/eco/iNEXT.html"
+  type: software
+- title: R 
+  path: "http://localhost:7777/software/R.html"
+  type: software
+- title: other
+  path: notused

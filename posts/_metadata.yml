@@ -5,4 +5,9 @@
 freeze: true
 
 # Enable banner style title blocks
-title-block-banner: true
+# title-block-banner: true
+
+margin-footer: |
+  <a href='/../../../'>
+  <img src="/../../../images/logo.png" width="100">
+  </a>

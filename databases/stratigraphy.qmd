@@ -1,0 +1,16 @@
+---
+title: "Stratigraphy"
+format:
+  html:
+    toc: true
+type: geo_database
+---
+
+# Geological Time Scales
+
+# 3d outcrop data
+
+# Spatiotemporal stratigraphy
+
+- Macrostrat
+

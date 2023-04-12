@@ -1,5 +1,24 @@
 ---
 title: Software 
+title-block-banner: true
 ---
 
+# Publishing
+- quarto
+- zotero
+
+### Website
+- jekyll
+- 
+
+
+
 This is the software page
+
+
+- Rmarkdown
+- mark
+- maxent
+- PAST
+- Slicer
+- GPlates

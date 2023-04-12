@@ -5,54 +5,110 @@ project:
     browser: false
 
 website:
-  title: "evolvED"
+  title: "Evolv-ED "
+  site-url: "https://integrated-record.github.io/evolved/"
   navbar:
+    logo: "/images/logo.png"
     search: true
     left:
-      - href: about.qmd
-        text: About
+      - text: About
+        menu:
+          - text: "Why?" 
+            href: software.qmd
+          - href: team.qmd
+            text: Contributors 
+          - href: team.qmd
+            text: "The Material"
       - file: databases.qmd
         text: "Databases"
       - file: software.qmd
         text: "Software"
       - file: examples.qmd
-        text: "Examples"
-      - href: team.qmd
-        text: Team 
-      - href: about.qmd
-        text: "Contact"
+        text: "Practice"
+      - text: "Contribute!"
+        menu:
+        - href: about.qmd
+          text: "How?"
+        - href: about.qmd
+          text: "Guide"
+        - href: about.qmd
+          text: "Get in touch!"
     right:
       - href: "https://integrated-record.github.io/"
         text: IRAL 
       - icon: github
-        href: https://github.com/
+        href: https://github.com/integrated
       - icon: twitter
         href: https://twitter.com/learn_evolved
         
   sidebar:
     - title: "Databases"
       style: "docked"
-      background: "#ffffff"
-      collapse-level: 1
+#      background: "#ffffff"
+      collapse-level: 2 
       contents:
-        - databases.qmd
-        - href: "databases.html#fossil-distribution"
-          text: "Organism Distribution"
-        - file: databases/pbdb.qmd
-          text: "Paleobiology Database"
+        - href: "databases.qmd"
+          text: "**Databases**"
+        - section: "Biology"
+          contents:
+          - href: "databases/organism_distribution.qmd"
+            text: "Organism Distribution"
+          - href: "databases/taxonomy.qmd"
+            text: "Taxonomy"
+          - href: "databases/trait_databases.qmd"
+            text: "Traits"
+          - href: "databases/morphology.qmd"
+            text: "Organism morphology"
+          - href: "databases/phylogenies.qmd"
+            text: "Phylogenies"
+          - href: "databases/interaction.qmd"
+            text: "Biotic Interaction"
+          - href: "databases/bioregionalization.qmd"
+            text: "Bioregionalization"
+        - section: "Geology/Geography"
+          contents:
+          - href: "databases/paleogeography.qmd"
+            text: "Paleogeography"
+          - href: "databases/modern_geography.qmd"
+            text: "Modern Geography"
+          - href: "databases/stratigraphy.qmd"
+            text: "Stratigraphy"
+          - href: "databases/cultural.qmd"
+            text: "Anthropogenic"
 
     - title: "Software"
       style: "docked"
-      background: "secondary"
       collapse-level: 2
       contents:
-        - software.qmd
-        - section: R extensions
+        - file: software.qmd
+          text: "**Software**"
+        - section: R
+          file: software/R.qmd
           contents:
-            - file: software/R/divDyn.qmd
+          - section: Ecology 
+            contents:
+            - file: software/R/eco/iNEXT.qmd
+              text: iNEXT
+          - section: Geology/Paleontology
+            contents:
+            - file: software/R/geo_paleo/divDyn.qmd
               text: divDyn
-    
-    - title: "Examples"
+            - file: software/R/geo_paleo/chronosphere.qmd
+              text: chronosphere
+        - section: Python 
+          file: software/python.Rqmd
+          contents:
+          - section: Geology/Paleontology
+            contents:
+            - file: software/python/pyGPlates.qmd
+              text: pyGPlates
+        - section: Publishing Tools
+          file: software/R.qmd
+        - section: Ecology Apps
+          file: software/R.qmd
+        - section: Geology Apps
+          file: software/R.qmd
+    - title: "Practice"
       style: "docked"
       collapse-level: 2
       contents:
@@ -60,8 +116,9 @@ website:
         
 format:
   html:
-    theme: cosmo 
+    theme:
+    - united 
+    - custom.scss
     css: styles.css
-
 
 

@@ -1,0 +1,14 @@
+---
+title: "Trait Databases"
+format:
+  html:
+    toc: true
+type: bio_database
+---
+
+### Organism traits
+- [Coral Traits]()
+
+### Fossil Buildups
+
+- [Ancient Reef Traits (ART)](databases/registry/ancient_reef_traits.qmd)

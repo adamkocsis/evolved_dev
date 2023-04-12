@@ -3,6 +3,6 @@ title: Danijela Dimitrijevic
 listing:
   contents: posts
   include:
-    author: '<a href="../../adam_kocsis.html">Kocsis, Adam</a>'
+    author: Kocsis, Adam
 ---
 
